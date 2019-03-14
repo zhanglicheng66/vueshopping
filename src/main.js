@@ -9,11 +9,12 @@ import './lib/mui/css/icons-extra.css'
 import VueResource from 'vue-resource'
 Vue.use(VueResource)
 //按需导入mint-ui中的组件
-import {Header,Swipe, SwipeItem} from 'mint-ui'
+import {Header,Swipe, SwipeItem,Button} from 'mint-ui'
 Vue.component(Header.name,Header)
 
 Vue.component(Swipe.name, Swipe);
 Vue.component(SwipeItem.name, SwipeItem);
+Vue.component(Button.name, Button);
 import router from './router.js'
 var vm = new Vue({
   el:'#app',
